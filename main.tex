@@ -1,0 +1,87 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsfonts}
+
+\usepackage{gensymb}
+
+\title{Physics Notes}
+\author{TBM}
+\usepackage{booktabs}
+\usepackage{amssymb}
+
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{pgfplots}
+
+\usepackage{circuitikz}
+\usepackage{siunitx}[load=named]
+\usetikzlibrary{arrows}
+\usepackage{hyperref}
+
+\usepackage{graphics}
+
+\usepackage{placeins}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[section]
+\newtheorem{notation}{Notation}[section]
+\newtheorem{experiment}{Experiment}[section]
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
+\usepackage{titlesec}
+\titleformat{\chapter}{\normalfont\huge}{\thechapter.}{20pt}{\huge\bf}
+
+\usepackage{mathtools}
+
+\newcommand{\prob}{\mathrm{P}}
+\newcommand{\event}{\mathbb{E}}
+
+\let\oldhat\hat
+\let\oldvec\vec
+\renewcommand{\hat}[1]{\boldsymbol{\mathrm{\oldhat{#1}}}}
+\renewcommand{\vec}[1]{\boldsymbol{\mathrm{#1}}}
+
+\begin{document}
+
+    \maketitle
+    
+    \tableofcontents
+    
+    \chapter{Foundations of Physics}
+    \input{notes/foundations-of-physics.tex}
+    \clearpage
+    
+    \chapter{Classical mechanics}
+    \label{chapter:mechanics}
+    \input{notes/mechanics.tex}
+    \clearpage
+    
+    \chapter{Thermal Physics}
+    \input{notes/thermal.tex}
+    \clearpage
+    
+    \chapter{Waves and Optics}
+    \input{notes/waves.tex}
+    \clearpage
+    
+    \chapter{Electricity}
+    \input{notes/electricity.tex}
+    \clearpage
+    
+    
+    \chapter{Modern Physics}
+    \input{notes/modern-physics.tex}
+    \clearpage
+    
+\end{document}
